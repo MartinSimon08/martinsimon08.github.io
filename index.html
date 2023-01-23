@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Martin Simon|Portfolio</title>
+  </head>
+  <body class="bg-black">
+   /* <img
+      class="absolute max-w-none  -z-30 -left-96 md:-left-64 lg:-left-24 top-32 pika"
+      src="src/assets/images/eevee.png"
+    />
+    <div id="container" class="mx-auto w-11/12 max-w-[1110px] md:w-5/6">
+      <div id="hero" class=" md:pb-[60px] lg:pb-56 pb-20">
+        <!--
+        <img src="src/assets/images/pattern-circle.svg" class="absolute -right-16 top-1/2 md:top-[39%] lg:top-[55%] lg:right-1/3" alt="">
+        -->
+        <div
+          class="absolute md:relative flex flex-col items-center justify-between pt-5 md:pt-10 align-middle md:flex-row left-0 right-0 mx-auto "
+        >
+          <p class="md:text-xl text-l text-white mb-5">Martin Simon</p>
+          <div
+            id="social-icons"
+            class="flex align-middle lg:justify-items-start "
+          >
+          <svg class="mx-3  w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <a xlink:href="https://github.com/MartinSimon08" target="_blank"  class="mx-3 w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4" >
+            <path  d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"/>
+            </a>
+          </svg>
+        
+        <svg class="mx-3  w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+          <a xlink:href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWstsBnMFfFXTThgGGHdVCbDxwsvFQhwNKSVDbjGCSqGTkJwwvhvgSxZclNJHzLQLVpBVVKqQ" target="_blank"  class="mx-3 w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4" >
+          <path d="M 5.5 7 C 3.0385965 7 1 9.0385965 1 11.5 L 1 38.5 C 1 40.961404 3.0385965 43 5.5 43 L 44.5 43 C 46.961404 43 49 40.961404 49 38.5 L 49 11.5 C 49 11.486654 48.996213 11.474258 48.996094 11.460938 C 48.996537 11.440306 49 11.421244 49 11.400391 L 48.990234 11.400391 C 48.934958 8.9848435 46.92738 7 44.5 7 L 5.5 7 z M 8.171875 9 L 41.865234 9 L 25 20.779297 L 8.171875 9 z M 4.8398438 9.1074219 L 25 23.220703 L 45.189453 9.1171875 C 46.192029 9.4257198 46.96467 10.363517 46.994141 11.4375 C 46.975926 11.681812 46.765817 12.080784 46.462891 12.412109 C 46.146099 12.7586 45.833984 12.976563 45.833984 12.976562 L 45.828125 12.980469 L 24.998047 27.775391 L 4.171875 13.080078 L 4.1660156 13.076172 C 4.1660156 13.076172 3.8539008 12.860163 3.5371094 12.513672 C 3.2203595 12.167182 3 11.739744 3 11.5 C 3 10.389458 3.8030909 9.4120336 4.8398438 9.1074219 z M 47 14.597656 L 47 38.5 C 47 39.838596 45.838596 41 44.5 41 L 44 41 L 44 16.732422 L 46.966797 14.625 L 46.974609 14.617188 C 46.974952 14.616953 46.998058 14.599 47 14.597656 z M 3 14.699219 C 3.0016742 14.700381 3.0230849 14.716556 3.0234375 14.716797 L 3.0273438 14.720703 L 3.0332031 14.724609 L 6 16.818359 L 6 41 L 5.5 41 C 4.1614035 41 3 39.838596 3 38.5 L 3 14.699219 z M 42 18.152344 L 42 41 L 8 41 L 8 18.228516 L 25.001953 30.224609 L 42 18.152344 z"></path>
+          </a>
+        </svg>
+        
+        <svg class="mx-3  w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <a xlink:href="https://linkedin.com/in/martinsimon08" target="_blank"  class="mx-3 w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4" >
+          <path  d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"/>
+          </a>
+        </svg>
+        
+        
+        <svg class="mx-3  w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+          <a xlink:href="https://wa.me/+542942650552" target="_blank"  class="mx-3 w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4" ></xlink:href=>>
+        <path d="M 25 2 C 12.3 2 2 12.3 2 25 C 2 29.1 3.1 32.899219 5 36.199219 L 2 46.699219 C 1.9 46.999219 1.9992187 47.399219 2.1992188 47.699219 C 2.4992187 47.999219 2.8992187 48 3.1992188 48 L 14.199219 45.300781 C 17.399219 47.000781 21.1 48 25 48 C 37.7 48 48 37.7 48 25 C 48 12.3 37.7 2 25 2 z M 25 4 C 36.6 4 46 13.4 46 25 C 46 36.6 36.6 46 25 46 C 21.3 46 17.800781 45.000781 14.800781 43.300781 C 14.600781 43.200781 14.299609 43.099219 14.099609 43.199219 L 4.5 45.599609 L 7 36.400391 C 7.1 36.100391 7.0003906 35.899609 6.9003906 35.599609 C 5.1003906 32.499609 4 28.9 4 25 C 4 13.4 13.4 4 25 4 z M 18.113281 12.988281 C 17.925781 12.975781 17.800781 13 17.800781 13 L 16.599609 13 C 15.999609 13 15.100781 13.2 14.300781 14 C 13.800781 14.5 12 16.3 12 19.5 C 12 22.9 14.299609 25.799609 14.599609 26.099609 C 14.599609 26.099609 15 26.600781 15.5 27.300781 C 16 28.000781 16.699609 28.800781 17.599609 29.800781 C 19.399609 31.700781 21.899609 33.899219 25.099609 35.199219 C 26.499609 35.799219 27.699609 36.2 28.599609 36.5 C 30.199609 37 31.700781 36.900781 32.800781 36.800781 C 33.600781 36.700781 34.500391 36.299219 35.400391 35.699219 C 36.300391 35.099219 37.199609 34.400391 37.599609 33.400391 C 37.899609 32.600391 37.999609 31.900781 38.099609 31.300781 L 38.099609 30.5 C 38.099609 30.2 38.000781 30.200781 37.800781 29.800781 C 37.300781 29.000781 36.799219 29.000781 36.199219 28.800781 C 35.899219 28.600781 34.999219 28.200781 34.199219 27.800781 C 33.299219 27.400781 32.599609 27.000781 32.099609 26.800781 C 31.799609 26.700781 31.400391 26.499609 30.900391 26.599609 C 30.400391 26.699609 29.899609 27 29.599609 27.5 C 29.299609 27.9 28.200781 29.299219 27.800781 29.699219 L 27.699219 29.599609 C 27.299219 29.399609 26.7 29.200781 26 28.800781 C 25.2 28.400781 24.299219 27.800781 23.199219 26.800781 C 21.599219 25.400781 20.499219 23.699609 20.199219 23.099609 C 20.499219 22.699609 20.899609 22.3 21.099609 22 C 21.199609 21.9 21.280859 21.799219 21.349609 21.699219 C 21.418359 21.599219 21.475391 21.500391 21.525391 21.400391 C 21.625391 21.200391 21.700781 21.000781 21.800781 20.800781 C 22.200781 20.100781 22.000781 19.300391 21.800781 18.900391 C 21.800781 18.900391 21.7 18.600781 21.5 18.300781 C 21.4 18.000781 21.2 17.499609 21 17.099609 C 20.6 16.199609 20.2 15.199609 20 14.599609 C 19.7 13.899609 19.300781 13.399219 18.800781 13.199219 C 18.550781 13.049219 18.300781 13.000781 18.113281 12.988281 z M 16.599609 15 L 17.699219 15 L 17.900391 15 C 17.900391 15 17.999609 15.100391 18.099609 15.400391 C 18.299609 16.000391 18.799609 17.000391 19.099609 17.900391 C 19.299609 18.300391 19.499609 18.799609 19.599609 19.099609 C 19.699609 19.399609 19.800391 19.600781 19.900391 19.800781 C 19.900391 19.900781 20 19.900391 20 19.900391 C 19.8 20.300391 19.8 20.399219 19.5 20.699219 C 19.2 21.099219 18.799219 21.499219 18.699219 21.699219 C 18.599219 21.899219 18.299609 22.1 18.099609 22.5 C 17.899609 22.9 18.000781 23.599609 18.300781 24.099609 C 18.700781 24.699609 19.900781 26.700391 21.800781 28.400391 C 23.000781 29.500391 24.1 30.199609 25 30.599609 C 25.9 31.099609 26.600781 31.300391 26.800781 31.400391 C 27.200781 31.600391 27.599609 31.699219 28.099609 31.699219 C 28.599609 31.699219 29.000781 31.3 29.300781 31 C 29.700781 30.6 30.699219 29.399609 31.199219 28.599609 L 31.400391 28.699219 C 31.400391 28.699219 31.699609 28.8 32.099609 29 C 32.499609 29.2 32.900391 29.399609 33.400391 29.599609 C 34.300391 29.999609 35.100391 30.399609 35.400391 30.599609 L 36 30.900391 L 36 31.199219 C 36 31.599219 35.899219 32.200781 35.699219 32.800781 C 35.599219 33.100781 35.000391 33.699609 34.400391 34.099609 C 33.700391 34.499609 32.899609 34.800391 32.599609 34.900391 C 31.699609 35.000391 30.600781 35.099219 29.300781 34.699219 C 28.500781 34.399219 27.4 34.1 26 33.5 C 23.2 32.3 20.899219 30.3 19.199219 28.5 C 18.399219 27.6 17.699219 26.799219 17.199219 26.199219 C 16.699219 25.599219 16.500781 25.2 16.300781 25 C 15.900781 24.6 14 21.999609 14 19.599609 C 14 17.099609 15.200781 16.100391 15.800781 15.400391 C 16.100781 15.000391 16.499609 15 16.599609 15 z"></path>
+          </a>
+      </svg>
+          </div>
+        </div>
+        
+       
+        <div class="mt-10 md:mt-22 lg:mt-32 flex text-center md:text-left flex-col md:w-3/5 lg:w-1/2 " id="intro-text">
+          <h1
+            class="text-[2.5rem] whitespace-normal font-bold leading-none tracking-tightest text-white md:text-[4.5rem] lg:text-3xl"
+          >
+            Hi!!<br />
+            I'm <span class="border-b-[6px] border-b-green">Martin Simon</span>.
+          </h1>
+          <h5 class="mt-11 mb-16 w-auto max-w-[455px] text-m text-lightGrey">
+            I am a front-end developer from Argentina, a systems engineering student passionate about web development and audiovisual editing, with experience in both jobs and desire to continue working for companies outside my country.
+          </h5>
+          <a href="#contact" 
+          ><button
+            class="border-b-2 pb-2 mx-auto border-green font-bold uppercase tracking-[.143rem] text-white hover:text-green"
+          >
+            Contact me
+          </button></a
+        >
+        <!--
+        <a href="https://www.instagram.com/martinsimon08/" target="_blank">
+        <img
+        id="portrait"
+        class="top-0 mx-auto -z-10 max-h-[720px] w-2/3 lg:w-1/2 md:w-4/12 md:max-w-[445px] md:absolute md:right-0 lg:right-[9.5%]"
+        src="src/assets/images/martin1.png"
+        /></a> -->
+        </div>
+        
+      </div>
+      
+
+      <div
+        id="skills"
+        class="border-t-[1px] border-white pt-10 md:pt-[52px] lg:pt-[72px]"
+      >
+        <ul
+          class="grid grid-cols-1 grid-rows-6 gap-y-6 text-center md:text-left text-white md:grid-cols-2 md:grid-rows-3 md:gap-x-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-x-7 lg:gap-y-14"
+        >
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">HTML</h3>
+            <span class="md:text-m leading-7 text-lightGrey"
+              >4 Years Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">CSS</h3>
+            <span class="md:text-m leading-7 text-lightGrey"
+              >2 Years Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">JavaScript</h3>
+            <span class="md:text-m leading-7 text-lightGrey"
+              >1 Year Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">
+              Typescript
+            </h3>
+            <span class="md:text-m leading-7 text-lightGrey"
+              >1 Year Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">React</h3>
+            <span class="md:text-m leading-7 text-lightGrey"
+              >1 Year Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">Wordpress</h3>
+            <span class=" md:text-m leading-7 text-lightGrey"
+              >6 months Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">Sass</h3>
+            <span class=" md:text-m leading-7 text-lightGrey"
+              >1 Year Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">Boostrap</h3>
+            <span class="md:text-m leading-7 text-lightGrey"
+              >2 Years Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">PHP</h3>
+            <span class=" md:text-m leading-7 text-lightGrey"
+              >6 months Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">Python</h3>
+            <span class=" md:text-m leading-7 text-lightGrey"
+              >2 Years Experience</span>
+              <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">Tkinter</h3>
+            <span class="md:text-m leading-7 text-lightGrey"
+              >1 Year Experience</span>
+              </li>
+            
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">Git</h3>
+            <span class="md:text-m leading-7 text-lightGrey"
+              >6 months Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">SQL</h3>
+            <span class="md:text-m leading-7 text-lightGrey"
+              >6 months Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">
+              Adobe Photoshop
+            </h3>
+            <span class="md:text-m leading-7 text-lightGrey"
+              >6 Years Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">Adobe XD</h3>
+            <span class="md:text-m leading-7 text-lightGrey"
+              >1 Year Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">Adobe Premiere</h3>
+            <span class=" md:text-m leading-7 text-lightGrey"
+              >6 Years Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">Adobe After Effects</h3>
+            <span class=" md:text-m leading-7 text-lightGrey"
+              >2 Years Experience</span
+            >
+          </li>
+          <li class="w-[345px]">
+            <h3 class="mb-3 text-xl md:text-2xl font-bold leading-[56px]">Adobe Audition</h3>
+            <span class=" md:text-m leading-7 text-lightGrey"
+              >1 Year Experience</span
+            >
+          </li>
+          
+        </ul>
+      </div>
+
+      <div id="projects-section" class="mt-36 pb-20 md:pb-32">
+        <div
+          id="projects-header"
+          class="md:mb-14 lg:mb-20 mb-10 flex items-center justify-between"
+        >
+          <h1 class="lg:text-3xl md:text-[4.5rem] text-[2.5rem] font-bold text-white">Projects</h1>
+          <a href="#contact" class=""
+            ><button
+              class="block border-b-2 border-green font-bold uppercase tracking-[.143rem] text-white hover:text-green"
+            >
+              Contact me
+            </button></a
+          >
+        </div>
+        <div
+          id="projects"
+          class="grid justify-items-center gap-y-10 md:grid-cols-2 md:grid-rows-3 md:gap-x-6 md:gap-y-14"
+        >
+          <div class="project max-w-[540px]">
+            <div class="proj-media relative">
+              <img
+                class="proj-img"
+                src="src/assets/images/ecommerce.png"
+              />
+              <div
+                class="proj-text hidden lg:flex absolute top-0  h-full w-full cursor-pointer flex-col items-center justify-center bg-black bg-opacity-75 uppercase opacity-0 transition-opacity duration-700 ease-in-out hover:opacity-100"
+              >
+                <a
+                  class="mb-12 border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+                  href="https://github.com/MartinSimon08/ecommerceshoes" target="_blank"
+                  >Download Proyect</a
+                >
+                <a
+                  class="border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+                  href=""
+                  ></a
+                >
+              </div>
+            </div>
+            <h5 class="mt-5 text-l font-bold uppercase leading-8 text-white">
+              Ecommerce
+            </h5>
+            <span class="mr-4 inline-block text-lightGrey">HTML</span
+            ><span class="mr-4 inline-block text-lightGrey">CSS</span>
+            <span class="text-lightGrey">JavaScript</span>
+            <div
+            class="mobile-proj-links flex lg:hidden uppercase cursor-pointer mt-5"
+          >
+            <a
+              class="border-b-2 mr-8 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+              href=""
+              >download project</a
+            >
+            <a
+              class="border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+              href=""
+              ></a
+            >
+          </div>
+          </div>
+          <div class="project max-w-[540px]">
+            <div class="proj-media relative">
+              <img
+                class="proj-img"
+                src="src/assets/images/aeropuerto.png"
+              />
+              <div
+                class="proj-text absolute top-0 hidden lg:flex h-full w-full cursor-pointer flex-col items-center justify-center bg-black bg-opacity-75 uppercase opacity-0 transition-opacity duration-700 ease-in-out hover:opacity-100"
+              >
+                <a
+                  class="mb-12 border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green" target="_blank"
+                  href="https://github.com/MartinSimon08/Aeropuerto"
+                  >download project</a
+                >
+                <a
+                  class="border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+                  href=""
+                  ></a
+                >
+              </div>
+            </div>
+            <h5 class="mt-5 text-l font-bold uppercase leading-8 text-white">
+              Airport Sales
+            </h5>
+            <span class="mr-4 inline-block text-lightGrey">HTML</span
+            ><span class="mr-4 inline-block text-lightGrey">CSS</span>
+            <span class="text-lightGrey">JavaScript and Typescript</span>
+            <div
+            class="mobile-proj-links flex lg:hidden uppercase cursor-pointer mt-5"
+          >
+            <a
+              class="border-b-2 mr-8 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+              href=""
+              >download project</a
+            >
+            <a
+              class="border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+              href=""
+              ></a
+            >
+          </div>
+          </div>
+
+          <div class="project max-w-[540px]">
+            <div class="proj-media relative">
+              <img
+                class="proj-img"
+                src="src/assets/images/space.png"
+              />
+              <div
+                class="proj-text absolute top-0 hidden lg:flex h-full w-full cursor-pointer flex-col items-center justify-center bg-black bg-opacity-75 uppercase opacity-0 transition-opacity duration-700 ease-in-out hover:opacity-100"
+              >
+                <a
+                  class="mb-12 border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green" target="_blank"
+                  href="https://github.com/MartinSimon08/space"
+                  >download project</a
+                >
+                <a
+                  class="border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+                  href=""
+                  ></a
+                >
+              </div>
+            </div>
+            <h5 class="mt-5 text-l font-bold uppercase leading-8 text-white">
+              Space
+            </h5>
+            <span class="mr-4 inline-block text-lightGrey">HTML</span
+            ><span class="mr-4 inline-block text-lightGrey">CSS</span
+            ><span class="text-lightGrey">JavaScript</span>
+            <div
+            class="mobile-proj-links flex lg:hidden uppercase cursor-pointer mt-5"
+          >
+            <a
+              class="border-b-2 mr-8 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+              href=""
+              >download project</a
+            >
+            <a
+              class="border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+              href=""
+              ></a
+            >
+          </div>
+          </div>
+
+          <div class="project max-w-[540px]">
+            <div class="proj-media relative">
+              <img
+                class="proj-img"
+                src="src/assets/images/calculadora.png"
+              />
+              <div
+                class="proj-text absolute top-0 hidden lg:flex h-full w-full cursor-pointer flex-col items-center justify-center bg-black bg-opacity-75 uppercase opacity-0 transition-opacity duration-700 ease-in-out hover:opacity-100"
+              >
+                <a
+                  class="mb-12 border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+                  href="https://github.com/MartinSimon08/Calculadora" target="_blank"
+                  >download project</a
+                >
+                <a
+                  class="border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+                  href=""
+                  ></a
+                >
+              </div>
+            </div>
+            <h5 class="mt-5 text-l font-bold uppercase leading-8 text-white">
+              Calculator
+            </h5>
+            <span class="mr-4 inline-block text-lightGrey">ReactJS</span
+            >
+            <div
+            class="mobile-proj-links flex lg:hidden uppercase cursor-pointer mt-5"
+          >
+            <a
+              class="border-b-2 mr-8 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+              href=""
+              >download project</a
+            >
+            <a
+              class="border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+              href=""
+              ></a
+            >
+          </div>
+          </div>
+
+          <div class="project max-w-[540px]">
+            <div class="proj-media relative">
+              <img
+                class="proj-img"
+                src="src/assets/images/musica.png"
+              />
+              <div
+                class="proj-text absolute top-0 hidden lg:flex h-full w-full cursor-pointer flex-col items-center justify-center bg-black bg-opacity-75 uppercase opacity-0 transition-opacity duration-700 ease-in-out hover:opacity-100"
+              >
+                <a
+                  class="mb-12 border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+                  href="https://github.com/MartinSimon08/MusicReproductor" target="_blank"
+                  >download project</a
+                >
+                <a
+                  class="border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+                  href=""
+                  ></a
+                >
+              </div>
+            </div>
+            <h5 class="mt-5 text-l font-bold uppercase leading-8 text-white">
+              Music Reproductor
+            </h5>
+            <span class="mr-4 inline-block text-lightGrey">HTML</span
+            ><span class="mr-4 inline-block text-lightGrey">CSS</span
+            ><span class="text-lightGrey">JavaScript</span>
+            <div
+            class="mobile-proj-links flex lg:hidden uppercase cursor-pointer mt-5"
+          >
+            <a
+              class="border-b-2 mr-8 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+              href=""
+              >download project</a
+            >
+            <a
+              class="border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+              href=""
+              ></a
+            >
+          </div>
+          </div>
+
+          <div class="project max-w-[540px]">
+            <div class="proj-media relative">
+              <img
+                class="proj-img"
+                src="src/assets/images/Works.png"
+              />
+              <div
+                class="proj-text absolute top-0 hidden lg:flex h-full w-full cursor-pointer flex-col items-center justify-center bg-black bg-opacity-75 uppercase opacity-0 transition-opacity duration-700 ease-in-out hover:opacity-100"
+              >
+                <a
+                  class="mb-12 border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+                  href="https://github.com/MartinSimon08/tareas" target="_blank"
+                  >download project</a
+                >
+                <a
+                  class="border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+                  href=""
+                  ></a
+                >
+              </div>
+            </div>
+            <h5 class="mt-5 text-l font-bold uppercase leading-8 text-white">
+              Things to do
+            </h5>
+            <span class="mr-4 inline-block text-lightGrey">ReactJS</span
+            >
+            <div
+            class="mobile-proj-links flex lg:hidden uppercase cursor-pointer mt-5"
+          >
+            <a
+              class="border-b-2 mr-8 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+              href=""
+              >download project</a
+            >
+            <a
+              class="border-b-2 border-green pb-2 font-bold tracking-[.143rem] text-white hover:text-green"
+              href=""
+              ></a
+            >
+          </div>
+          
+          </div>
+          
+        </div>
+      </div>
+      <!--
+      <h1 class="text-[2.5rem] whitespace-normal font-bold leading-none tracking-tightest text-white md:text-[4.5rem] lg:text-3xl">And more in
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="240" height="240" viewBox="0 0 30 30" class="cursor-pointer fill-white hover:fill-green md:mx-4"  >
+        <a xlink:href="https://github.com/MartinSimon08" target="_blank" width="240" height="240" viewBox="0 0 30 30" class="gitgrande"   >width="240" height="240" viewBox="0 0 30 30" class="cursor-pointer fill-white hover:fill-green md:mx-4" 
+        <path xlink:href="https://github.com/MartinSimon08" target="_blank"   d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+        </svg> </h1>-->
+      </a>
+      
+    </div>
+    <div id="contact" class="bg-darkGrey relative">
+      <img
+      class="absolute max-w-none fill-lightGrey  -left-96  lg:-left-52 bottom-24 md:bottom-6 pika"
+      src="src/assets/images/pika.webp"
+    />
+    
+
+      <div
+        class="contact-container mx-auto flex w-11/12 max-w-[1110px] flex-col items-center justify-between py-14 md:py-20 text-center md:w-5/6 lg:flex-row"
+      >
+        <div id="contact-text" class="mb-12 flex max-w-[445px] flex-col">
+          <h1 class="lg:text-3xl text-[2.5rem] md:text-[4.5rem] font-bold text-white">Contact</h1>
+          <p class="text-lightGrey">
+            To contact me, you can find my phone number and my email address in the buttons on the page
+          </p>
+
+    </div>
+    <footer class="relative bg-darkGrey">
+      
+      
+      <!--
+      <div
+        class="footer-container mx-auto flex w-11/12 max-w-[1110px] flex-col items-center md:justify-between border-t-[1px] border-white py-20 pt-10 align-middle md:w-5/6 md:flex-row"
+      >
+    -->
+       <!-- <p class="md:text-xl text-l text-white mb-5">
+          
+          Martin   
+        </p>
+        <img class="absolute  fill-lightGrey  squi " src="src/assets/images/squirtle.png" alt="" >
+        -->
+        
+        <div id="social-icons" class="flex align-middle lg:justify-items-start">
+          
+          <svg class="mx-3 w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+            <a xlink:href="https://github.com/MartinSimon08" target="_blank"  class="mx-3 w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4" >
+            <path  d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"/>
+            </a>
+          </svg>
+ 
+            <svg class="mx-3  w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+          <a xlink:href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWstsBnMFfFXTThgGGHdVCbDxwsvFQhwNKSVDbjGCSqGTkJwwvhvgSxZclNJHzLQLVpBVVKqQ" target="_blank"  class="mx-3 w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4" >
+          <path d="M 5.5 7 C 3.0385965 7 1 9.0385965 1 11.5 L 1 38.5 C 1 40.961404 3.0385965 43 5.5 43 L 44.5 43 C 46.961404 43 49 40.961404 49 38.5 L 49 11.5 C 49 11.486654 48.996213 11.474258 48.996094 11.460938 C 48.996537 11.440306 49 11.421244 49 11.400391 L 48.990234 11.400391 C 48.934958 8.9848435 46.92738 7 44.5 7 L 5.5 7 z M 8.171875 9 L 41.865234 9 L 25 20.779297 L 8.171875 9 z M 4.8398438 9.1074219 L 25 23.220703 L 45.189453 9.1171875 C 46.192029 9.4257198 46.96467 10.363517 46.994141 11.4375 C 46.975926 11.681812 46.765817 12.080784 46.462891 12.412109 C 46.146099 12.7586 45.833984 12.976563 45.833984 12.976562 L 45.828125 12.980469 L 24.998047 27.775391 L 4.171875 13.080078 L 4.1660156 13.076172 C 4.1660156 13.076172 3.8539008 12.860163 3.5371094 12.513672 C 3.2203595 12.167182 3 11.739744 3 11.5 C 3 10.389458 3.8030909 9.4120336 4.8398438 9.1074219 z M 47 14.597656 L 47 38.5 C 47 39.838596 45.838596 41 44.5 41 L 44 41 L 44 16.732422 L 46.966797 14.625 L 46.974609 14.617188 C 46.974952 14.616953 46.998058 14.599 47 14.597656 z M 3 14.699219 C 3.0016742 14.700381 3.0230849 14.716556 3.0234375 14.716797 L 3.0273438 14.720703 L 3.0332031 14.724609 L 6 16.818359 L 6 41 L 5.5 41 C 4.1614035 41 3 39.838596 3 38.5 L 3 14.699219 z M 42 18.152344 L 42 41 L 8 41 L 8 18.228516 L 25.001953 30.224609 L 42 18.152344 z">
+          </a>
+        </svg>
+          <svg class="mx-3 w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+            
+            <a xlink:href="https://linkedin.com/in/martinsimon08" target="_blank" class="mx-3 w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4">
+            <path  d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"/>
+            </a>
+          </svg>
+          
+          <svg  class="mx-3  w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+            <a xlink:href="https://wa.me/+542942650552" target="_blank"  class="mx-3 w-[19px] md:w-[24px] cursor-pointer fill-white hover:fill-green md:mx-4">
+            <path d="M 25 2 C 12.3 2 2 12.3 2 25 C 2 29.1 3.1 32.899219 5 36.199219 L 2 46.699219 C 1.9 46.999219 1.9992187 47.399219 2.1992188 47.699219 C 2.4992187 47.999219 2.8992187 48 3.1992188 48 L 14.199219 45.300781 C 17.399219 47.000781 21.1 48 25 48 C 37.7 48 48 37.7 48 25 C 48 12.3 37.7 2 25 2 z M 25 4 C 36.6 4 46 13.4 46 25 C 46 36.6 36.6 46 25 46 C 21.3 46 17.800781 45.000781 14.800781 43.300781 C 14.600781 43.200781 14.299609 43.099219 14.099609 43.199219 L 4.5 45.599609 L 7 36.400391 C 7.1 36.100391 7.0003906 35.899609 6.9003906 35.599609 C 5.1003906 32.499609 4 28.9 4 25 C 4 13.4 13.4 4 25 4 z M 18.113281 12.988281 C 17.925781 12.975781 17.800781 13 17.800781 13 L 16.599609 13 C 15.999609 13 15.100781 13.2 14.300781 14 C 13.800781 14.5 12 16.3 12 19.5 C 12 22.9 14.299609 25.799609 14.599609 26.099609 C 14.599609 26.099609 15 26.600781 15.5 27.300781 C 16 28.000781 16.699609 28.800781 17.599609 29.800781 C 19.399609 31.700781 21.899609 33.899219 25.099609 35.199219 C 26.499609 35.799219 27.699609 36.2 28.599609 36.5 C 30.199609 37 31.700781 36.900781 32.800781 36.800781 C 33.600781 36.700781 34.500391 36.299219 35.400391 35.699219 C 36.300391 35.099219 37.199609 34.400391 37.599609 33.400391 C 37.899609 32.600391 37.999609 31.900781 38.099609 31.300781 L 38.099609 30.5 C 38.099609 30.2 38.000781 30.200781 37.800781 29.800781 C 37.300781 29.000781 36.799219 29.000781 36.199219 28.800781 C 35.899219 28.600781 34.999219 28.200781 34.199219 27.800781 C 33.299219 27.400781 32.599609 27.000781 32.099609 26.800781 C 31.799609 26.700781 31.400391 26.499609 30.900391 26.599609 C 30.400391 26.699609 29.899609 27 29.599609 27.5 C 29.299609 27.9 28.200781 29.299219 27.800781 29.699219 L 27.699219 29.599609 C 27.299219 29.399609 26.7 29.200781 26 28.800781 C 25.2 28.400781 24.299219 27.800781 23.199219 26.800781 C 21.599219 25.400781 20.499219 23.699609 20.199219 23.099609 C 20.499219 22.699609 20.899609 22.3 21.099609 22 C 21.199609 21.9 21.280859 21.799219 21.349609 21.699219 C 21.418359 21.599219 21.475391 21.500391 21.525391 21.400391 C 21.625391 21.200391 21.700781 21.000781 21.800781 20.800781 C 22.200781 20.100781 22.000781 19.300391 21.800781 18.900391 C 21.800781 18.900391 21.7 18.600781 21.5 18.300781 C 21.4 18.000781 21.2 17.499609 21 17.099609 C 20.6 16.199609 20.2 15.199609 20 14.599609 C 19.7 13.899609 19.300781 13.399219 18.800781 13.199219 C 18.550781 13.049219 18.300781 13.000781 18.113281 12.988281 z M 16.599609 15 L 17.699219 15 L 17.900391 15 C 17.900391 15 17.999609 15.100391 18.099609 15.400391 C 18.299609 16.000391 18.799609 17.000391 19.099609 17.900391 C 19.299609 18.300391 19.499609 18.799609 19.599609 19.099609 C 19.699609 19.399609 19.800391 19.600781 19.900391 19.800781 C 19.900391 19.900781 20 19.900391 20 19.900391 C 19.8 20.300391 19.8 20.399219 19.5 20.699219 C 19.2 21.099219 18.799219 21.499219 18.699219 21.699219 C 18.599219 21.899219 18.299609 22.1 18.099609 22.5 C 17.899609 22.9 18.000781 23.599609 18.300781 24.099609 C 18.700781 24.699609 19.900781 26.700391 21.800781 28.400391 C 23.000781 29.500391 24.1 30.199609 25 30.599609 C 25.9 31.099609 26.600781 31.300391 26.800781 31.400391 C 27.200781 31.600391 27.599609 31.699219 28.099609 31.699219 C 28.599609 31.699219 29.000781 31.3 29.300781 31 C 29.700781 30.6 30.699219 29.399609 31.199219 28.599609 L 31.400391 28.699219 C 31.400391 28.699219 31.699609 28.8 32.099609 29 C 32.499609 29.2 32.900391 29.399609 33.400391 29.599609 C 34.300391 29.999609 35.100391 30.399609 35.400391 30.599609 L 36 30.900391 L 36 31.199219 C 36 31.599219 35.899219 32.200781 35.699219 32.800781 C 35.599219 33.100781 35.000391 33.699609 34.400391 34.099609 C 33.700391 34.499609 32.899609 34.800391 32.599609 34.900391 C 31.699609 35.000391 30.600781 35.099219 29.300781 34.699219 C 28.500781 34.399219 27.4 34.1 26 33.5 C 23.2 32.3 20.899219 30.3 19.199219 28.5 C 18.399219 27.6 17.699219 26.799219 17.199219 26.199219 C 16.699219 25.599219 16.500781 25.2 16.300781 25 C 15.900781 24.6 14 21.999609 14 19.599609 C 14 17.099609 15.200781 16.100391 15.800781 15.400391 C 16.100781 15.000391 16.499609 15 16.599609 15 z">
+            </a>
+          </svg>
+          
+        </div>
+        
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+  
+</html>
